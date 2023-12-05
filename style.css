@@ -1,0 +1,85 @@
+
+
+
+/* variables */
+
+
+:root {
+  --seasalt: #f8f9fa;
+  --anti-flashwhite: #E9ECEF;
+  --platinum: #DEE2E6;
+  --french-gray: #CED4DA;
+  --slate-gray: #6C757D;
+  --outer-space: #495057;
+  --onyx: #343A40;
+  --eerie-black: #212529;
+  --baby-powder: #FEFEFA;
+  --rich-black: #010B13;
+
+  --ff-base: 'Roboto', sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  font-family: var(--ff-base);
+  min-height: 100vh;
+  background-color: var(--baby-powder)
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.header__heading {
+  font-size: 1.5rem;
+  color: var(--rich-black);
+}
+
+.btn__menu {
+  border: none;
+  background-color: transparent;
+}
+
+
+.nav__mobile {
+  display: none;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+#about-me {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-block-end: 2rem;
+}
+
+.about-me__content {
+  padding-inline: 1rem;
+}
+
+.about-me__content p {
+  color: var(--outer-space);
+}

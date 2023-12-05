@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+
+    <title>Personal Portfolio</title>
+
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__heading">Ralph Virtucio</h1>
+
+      <button
+        class="btn__menu btn__menu--mobile"
+        aria-labelledby="menu__btn">
+        <svg
+          id="menu__btn"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          height="30"
+          width="30"
+          viewBox="0 0 448 512">
+          <!-- !Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc. -->
+          <path
+            d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+        </svg>
+      </button>
+
+      <nav class="nav__mobile">
+        <ul class="nav__list">
+          <li><a href="#">About Me</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Skills</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section id="about-me">
+        <div class="about-me__content">
+          <h2>About Me</h2>
+          <p>
+            I am an enthusiastic web developer based in the Philippines. My journey into the world of web development commenced during the pandemic, a challenging period that turned out to be a pivotal moment. It was then that my uncle introduced me to programming, sparking a deep passion within me. Witnessing the transformative power of code, I became captivated by its ability to bring ideas to life.
+          </p>
+          <!-- <p>
+            As a self-taught developer, my innate love for learning and tackling new challenges has fueled my journey. I approach the learning process with enthusiasm, constantly seeking to broaden my skills. Currently, I am immersed in studying Data Structures and Algorithms. This endeavor allows me to explore different approaches to problem-solving, delve into diverse methods of storing and retrieving data, and optimize the performance of my code. My commitment to continuous improvement drives my ambition to contribute meaningfully to the ever-evolving landscape of web development.
+          </p> -->
+        </div>
+
+        <div class="about-me">
+          <img
+            src="./image/profile.jpg"
+            alt="Profile Photo" />
+        </div>
+      </section>
+
+      <section>
+        <h2>Projects</h2>
+
+        <ul>
+          <li>
+            <img
+              src="./image/ralphvirtucio.github.io_huddle-landing-page-alternating_.png"
+              alt="Project #1" />
+            <div>
+              <h3>Project 1</h3>
+              <p>My project 1</p>
+            </div>
+          </li>
+          <li>
+            <img
+              src="./image/tip-calculator-app-drab-five.vercel.app_.png"
+              alt="Project #2" />
+            <div>
+              <h3>Project 2</h3>
+              <p>My project 2</p>
+            </div>
+          </li>
+          <li>
+            <img
+              src="./image/intro-component-with-signup-form-livid-nine.vercel.app_.png"
+              alt="Project #3" />
+            <div>
+              <h3>Project 3</h3>
+              <p>My project 3</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <h2>Contact Info</h2>
+      <input type="text" placeholder="email@gmail.com">
+      <textarea name="suggestion" id="suggestion" cols="4" rows="10"></textarea>
+    </footer>
+  </body>
+</html>
