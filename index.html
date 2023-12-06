@@ -58,59 +58,135 @@
         <div class="about-me__content">
           <h2>About Me</h2>
           <p>
-            I am an enthusiastic web developer based in the Philippines. My journey into the world of web development commenced during the pandemic, a challenging period that turned out to be a pivotal moment. It was then that my uncle introduced me to programming, sparking a deep passion within me. Witnessing the transformative power of code, I became captivated by its ability to bring ideas to life.
+            I am an enthusiastic web developer based in the Philippines. My
+            journey into the world of web development commenced during the
+            pandemic, a challenging period that turned out to be a pivotal
+            moment. It was then that my uncle introduced me to programming,
+            sparking a deep passion within me. Witnessing the transformative
+            power of code, I became captivated by its ability to bring ideas to
+            life.
           </p>
           <!-- <p>
             As a self-taught developer, my innate love for learning and tackling new challenges has fueled my journey. I approach the learning process with enthusiasm, constantly seeking to broaden my skills. Currently, I am immersed in studying Data Structures and Algorithms. This endeavor allows me to explore different approaches to problem-solving, delve into diverse methods of storing and retrieving data, and optimize the performance of my code. My commitment to continuous improvement drives my ambition to contribute meaningfully to the ever-evolving landscape of web development.
           </p> -->
         </div>
 
-        <div class="about-me">
+        <div class="about-me__profile">
           <img
             src="./image/profile.jpg"
             alt="Profile Photo" />
         </div>
       </section>
 
-      <section>
+      <section id="projects">
         <h2>Projects</h2>
 
-        <ul>
-          <li>
+        <ul class="projects__list">
+          <li class="projects__list-item">
             <img
-              src="./image/ralphvirtucio.github.io_huddle-landing-page-alternating_.png"
+              src="./image/ralphvirtucio.github.io_news-homepage_.png"
               alt="Project #1" />
-            <div>
-              <h3>Project 1</h3>
-              <p>My project 1</p>
+            <div class="projects__list-item-content">
+              <h3>News Homepage</h3>
+              <p>
+                Creating this application, I was able to practice my CSS Grid
+                skills, I also applied my knowledge about accessibility, Feel
+                free to inspect this
+                <a
+                  href="https://edition.cnn.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >website</a
+                >
+                which I followed for accessibility.
+              </p>
+
+              <ul class="project__tech-stack">
+                <li>Mobile-First workflow</li>
+                <li>HTML,CSS, JavaScript</li>
+                <li>SASS</li>
+              </ul>
             </div>
           </li>
-          <li>
+          <li class="projects__list-item">
             <img
               src="./image/tip-calculator-app-drab-five.vercel.app_.png"
               alt="Project #2" />
-            <div>
-              <h3>Project 2</h3>
-              <p>My project 2</p>
+            <div class="projects__list-item-content">
+              <h3>Tip Calculator</h3>
+              <p>
+                Creating this small application test my grips with JavaScript
+                it's a useful application
+              </p>
+              <ul class="project__tech-stack">
+                <li>Mobile-First workflow</li>
+                <li>React.js</li>
+                <li>SASS</li>
+              </ul>
             </div>
           </li>
-          <li>
+          <li class="projects__list-item">
             <img
               src="./image/intro-component-with-signup-form-livid-nine.vercel.app_.png"
               alt="Project #3" />
-            <div>
-              <h3>Project 3</h3>
-              <p>My project 3</p>
+            <div class="projects__list-item-content">
+              <h3>Intro component with sign-up form</h3>
+              <p>
+                Creating this application, I was able to apply my learnings
+                about the client-side validation
+              </p>
+              <ul class="project__tech-stack">
+                <li>Mobile-First workflow</li>
+                <li>React.js</li>
+                <li>SASS</li>
+              </ul>
             </div>
           </li>
         </ul>
       </section>
     </main>
 
-    <footer>
+    <footer class="footer">
       <h2>Contact Info</h2>
-      <input type="text" placeholder="email@gmail.com">
-      <textarea name="suggestion" id="suggestion" cols="4" rows="10"></textarea>
+
+      <div>Got Project Ideas <a href="mailto: ralph.virtucio.fullstack@gmail.com">Contact me at ralph.virtucio.fullstack@gmail.com</a></div>
+      <ul>
+        <li>
+          <a
+            href="https://github.com/ralphvirtucio"
+            aria-label="Github" target="_blank">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="30"
+              width="30"
+              viewBox="0 0 448 512"
+              aria-hidden="true">
+              <!-- !Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc. -->
+              <path
+                d="M448 96c0-35.3-28.7-64-64-64H64C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96zM265.8 407.7c0-1.8 0-6 .1-11.6c.1-11.4 .1-28.8 .1-43.7c0-15.6-5.2-25.5-11.3-30.7c37-4.1 76-9.2 76-73.1c0-18.2-6.5-27.3-17.1-39c1.7-4.3 7.4-22-1.7-45c-13.9-4.3-45.7 17.9-45.7 17.9c-13.2-3.7-27.5-5.6-41.6-5.6s-28.4 1.9-41.6 5.6c0 0-31.8-22.2-45.7-17.9c-9.1 22.9-3.5 40.6-1.7 45c-10.6 11.7-15.6 20.8-15.6 39c0 63.6 37.3 69 74.3 73.1c-4.8 4.3-9.1 11.7-10.6 22.3c-9.5 4.3-33.8 11.7-48.3-13.9c-9.1-15.8-25.5-17.1-25.5-17.1c-16.2-.2-1.1 10.2-1.1 10.2c10.8 5 18.4 24.2 18.4 24.2c9.7 29.7 56.1 19.7 56.1 19.7c0 9 .1 21.7 .1 30.6c0 4.8 .1 8.6 .1 10c0 4.3-3 9.5-11.5 8C106 393.6 59.8 330.8 59.8 257.4c0-91.8 70.2-161.5 162-161.5s166.2 69.7 166.2 161.5c.1 73.4-44.7 136.3-110.7 158.3c-8.4 1.5-11.5-3.7-11.5-8zm-90.5-54.8c-.2-1.5 1.1-2.8 3-3.2c1.9-.2 3.7 .6 3.9 1.9c.3 1.3-1 2.6-3 3c-1.9 .4-3.7-.4-3.9-1.7zm-9.1 3.2c-2.2 .2-3.7-.9-3.7-2.4c0-1.3 1.5-2.4 3.5-2.4c1.9-.2 3.7 .9 3.7 2.4c0 1.3-1.5 2.4-3.5 2.4zm-14.3-2.2c-1.9-.4-3.2-1.9-2.8-3.2s2.4-1.9 4.1-1.5c2 .6 3.3 2.1 2.8 3.4c-.4 1.3-2.4 1.9-4.1 1.3zm-12.5-7.3c-1.5-1.3-1.9-3.2-.9-4.1c.9-1.1 2.8-.9 4.3 .6c1.3 1.3 1.8 3.3 .9 4.1c-.9 1.1-2.8 .9-4.3-.6zm-8.5-10c-1.1-1.5-1.1-3.2 0-3.9c1.1-.9 2.8-.2 3.7 1.3c1.1 1.5 1.1 3.3 0 4.1c-.9 .6-2.6 0-3.7-1.5zm-6.3-8.8c-1.1-1.3-1.3-2.8-.4-3.5c.9-.9 2.4-.4 3.5 .6c1.1 1.3 1.3 2.8 .4 3.5c-.9 .9-2.4 .4-3.5-.6zm-6-6.4c-1.3-.6-1.9-1.7-1.5-2.6c.4-.6 1.5-.9 2.8-.4c1.3 .7 1.9 1.8 1.5 2.6c-.4 .9-1.7 1.1-2.8 .4z" />
+            </svg>
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="https://www.linkedin.com/in/ralph-virtucio-970152229"
+            aria-label="LinkedIn" target="_blank">
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="30"
+                width="30"
+                viewBox="0 0 448 512"
+                aria-hidden="true">
+                <!-- !Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc. -->
+                <path
+                  d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
+              </svg>
+            </span>
+          </a>
+        </li>
+      </ul>
     </footer>
   </body>
 </html>
