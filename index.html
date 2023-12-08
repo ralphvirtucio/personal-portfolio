@@ -16,51 +16,58 @@
       href="https://fonts.gstatic.com"
       crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200;400;700&family=Noto+Sans+JP:wght@400;600;700&display=swap"
       rel="stylesheet" />
-
     <link
       rel="stylesheet"
       href="style.css" />
+
+    <script
+      src="./main.js"
+      defer></script>
   </head>
   <body>
-    <header>
-      <h1>Ralph Virtucio</h1>
+    <div class="main__container">
+      <header class="header">
+        <h1 class="header__heading">Ralph Virtucio</h1>
 
-      <nav>
-        <ul>
-          <li><a href="">About Me</a></li>
-          <li><a href="">Projects</a></li>
-          <li><a href="">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__list-item"><a href="./index.html">About Me</a></li>
+            <li class="nav__list-item">
+              <a href="./projects.html">Projects</a>
+            </li>
+            <li class="nav__list-item"><a href="./contact.html">Contact</a></li>
+          </ul>
 
-    <main>
-      <section id="about-me">
-        <div class="about-me__content">
-          <h2>About Me</h2>
-          <p>
-            I am an enthusiastic web developer based in the Philippines. My
-            journey into the world of web development commenced during the
-            pandemic, a challenging period that turned out to be a pivotal
-            moment. It was then that my uncle introduced me to programming,
-            sparking a deep passion within me. Witnessing the transformative
-            power of code, I became captivated by its ability to bring ideas to
-            life.
-          </p>
-          <!-- <p>
-            As a self-taught developer, my innate love for learning and tackling new challenges has fueled my journey. I approach the learning process with enthusiasm, constantly seeking to broaden my skills. Currently, I am immersed in studying Data Structures and Algorithms. This endeavor allows me to explore different approaches to problem-solving, delve into diverse methods of storing and retrieving data, and optimize the performance of my code. My commitment to continuous improvement drives my ambition to contribute meaningfully to the ever-evolving landscape of web development.
-          </p> -->
-        </div>
+        </nav>
+      </header>
 
-        <div class="about-me__profile">
-          <img
-            src="./image/profile.jpg"
-            alt="Profile Photo" />
-        </div>
-      </section>
-    </main>
+      <main>
+        <section id="about-me">
+          <div class="about-me__content">
+            <h2 class="about-me__heading">About Me</h2>
+            <p class="about-me__text">
+              I am an enthusiastic web developer based in the Philippines. My
+              journey into the world of web development commenced during the
+              pandemic, a challenging period that turned out to be a pivotal
+              moment. It was then that my uncle introduced me to programming,
+              sparking a deep passion within me. Witnessing the transformative
+              power of code, I became captivated by its ability to bring ideas
+              to life.
+            </p>
+            <!-- <p>
+              As a self-taught developer, my innate love for learning and tackling new challenges has fueled my journey. I approach the learning process with enthusiasm, constantly seeking to broaden my skills. Currently, I am immersed in studying Data Structures and Algorithms. This endeavor allows me to explore different approaches to problem-solving, delve into diverse methods of storing and retrieving data, and optimize the performance of my code. My commitment to continuous improvement drives my ambition to contribute meaningfully to the ever-evolving landscape of web development.
+            </p> -->
+          </div>
 
+          <div class="about-me__profile">
+            <img
+              src="./image/profile.jpg"
+              alt="Profile Photo" />
+          </div>
+        </section>
+      </main>
+    </div>
   </body>
 </html>
