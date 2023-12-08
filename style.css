@@ -1,24 +1,23 @@
-
-
 :root {
   --seasalt: #f8f9fa;
-  --anti-flashwhite: #E9ECEF;
-  --platinum: #DEE2E6;
-  --french-gray: #CED4DA;
-  --slate-gray: #6C757D;
+  --anti-flashwhite: #e9ecef;
+  --platinum: #dee2e6;
+  --french-gray: #ced4da;
+  --slate-gray: #6c757d;
   --outer-space: #495057;
-  --onyx: #343A40;
+  --onyx: #343a40;
   --eerie-black: #212529;
-  --baby-powder: #FEFEFA;
-  --rich-black: #010B13;
-  --crayola-blue: #1F75FE;
+  --baby-powder: #fefefa;
+  --rich-black: #010b13;
+  --crayola-blue: #1f75fe;
 
   --ff-body: 'Noto Sans JP', sans-serif;
   --ff-heading: 'IBM Plex Mono', monospace;
 }
 
-
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -55,23 +54,19 @@ body {
   margin-block-end: 2rem;
 }
 
-
 .header__heading {
   font-family: var(--ff-heading);
   color: var(--rich-black);
 }
-
 
 .nav__list {
   display: flex;
   flex-direction: column;
 }
 
-
 .nav__list-item a:link,
 .nav__list-item a:visited,
-.nav__list-item a:active
-{
+.nav__list-item a:active {
   text-decoration: none;
   font-family: var(--ff-heading);
   font-weight: 600;
@@ -84,8 +79,6 @@ body {
   text-decoration: underline;
 }
 
-
-
 .about-me__heading {
   font-family: var(--ff-heading);
   color: var(--rich-black);
@@ -93,14 +86,42 @@ body {
   font-weight: 700;
 }
 
-
 #about-me .about-me__profile {
- display: none;
+  display: none;
 }
 
 
+#projects .projects__heading {
+  font-family: var(--ff-heading);
+  color: var(--rich-black);
+  margin-block-end: 1rem;
+  font-weight: 700;
+}
+
+#projects .projects__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+
+#projects .projects__list-item {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+
+  overflow: hidden;
+}
+
+#projects .projects__list-item-content {
+  padding: 1rem;
+}
+
+#projects .project__link:hover {
+  opacity: 0.2;
+}
+
 @media only screen and (min-width: 64rem) {
-.header {
+  .header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -114,15 +135,12 @@ body {
     flex-direction: row;
     gap: 2rem;
   }
-  
 
   .nav__list-item a:link,
-.nav__list-item a:visited,
-.nav__list-item a:active
-{
-  font-size: 1.125rem;
-}
-
+  .nav__list-item a:visited,
+  .nav__list-item a:active {
+    font-size: 1.125rem;
+  }
 
   .main {
     display: flex;
@@ -152,8 +170,8 @@ body {
   #about-me .about-me__profile {
     display: inline-block;
     width: 20%;
-   }
-  #about-me .about-me__profile img  {
+  }
+  #about-me .about-me__profile img {
     border-radius: 50%;
-   }
+  }
 }
