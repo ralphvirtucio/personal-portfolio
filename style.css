@@ -106,10 +106,23 @@ body {
     align-items: center;
   }
 
+  .header__heading {
+    font-size: 3rem;
+  }
+
   .nav__list {
     flex-direction: row;
     gap: 2rem;
   }
+  
+
+  .nav__list-item a:link,
+.nav__list-item a:visited,
+.nav__list-item a:active
+{
+  font-size: 1.125rem;
+}
+
 
   .main {
     display: flex;
@@ -126,6 +139,14 @@ body {
 
   #about-me .about-me__content {
     width: 50%;
+  }
+
+  #about-me .about-me__heading {
+    font-size: 3rem;
+  }
+  #about-me .about-me__text {
+    font-size: 1.5rem;
+    line-height: 1.8;
   }
 
   #about-me .about-me__profile {
