@@ -152,6 +152,9 @@ body {
   fill: #536878
 }
 
+
+
+
 @media only screen and (min-width: 64rem) {
   .header {
     flex-direction: row;
@@ -195,7 +198,7 @@ body {
     font-size: 3rem;
   }
   #about-me .about-me__text {
-    font-size: 1.5rem;
+    font-size: 1rem;
     line-height: 1.8;
   }
 
