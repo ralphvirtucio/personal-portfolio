@@ -152,6 +152,42 @@ body {
   fill: #536878
 }
 
+#contact {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+#contact .contact__heading {
+  color: var(--rich-black);
+  margin-block-end: 1rem;
+  font-weight: 700;
+}
+
+#contact .contact__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+#contact .contact__form  input{
+ padding: .75rem;
+ font-size: 1.25rem;
+}
+
+#contact .contact__form textarea {
+  padding: .75rem;
+  font-size: 1.25rem;
+}
+#contact .contact__form button[type="submit"] {
+  align-self: flex-start;
+ padding-inline: 2rem;
+ padding-block: .75rem;
+ font-size: 1.25rem;
+
+}
+
+
+
 
 
 

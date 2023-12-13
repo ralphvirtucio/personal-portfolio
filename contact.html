@@ -1,45 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Personal Portfolio | Contacts</title>
-</head>
-<body>
-  <div class="main__container">
-    <header class="header">
-      <h1 class="header__heading">Ralph Virtucio</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="style.css" />
 
-      <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__list-item"><a href="./index.html">About Me</a></li>
-          <li class="nav__list-item">
-            <a href="./projects.html">Projects</a>
-          </li>
-          <li class="nav__list-item"><a href="./contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+    <script
+      src="./main.js"
+      defer></script>
+    <title>Personal Portfolio | Contacts</title>
+  </head>
+  <body>
+    <div class="main__container">
+      <header class="header">
+        <h1 class="header__heading">Ralph Virtucio</h1>
 
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__list-item"><a href="./index.html">About Me</a></li>
+            <li class="nav__list-item">
+              <a href="./projects.html">Projects</a>
+            </li>
+            <li class="nav__list-item" ><a href="./contact.html" class="website__nav">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
 
+      <main>
+        <section id="contact">
+          <h2 class="contact__heading">Contact</h2>
+          <form
+            action="mailto:ralph.virtucio.fullstack@gmail.com"
+            class="contact__form">
+            <input
+              type="text"
+              id="full-name"
+              name="full-name"
+              placeholder="Full Name"
+              required />
 
-    <main>
-      <form action="">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+              required />
 
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="Enter your message"
+              required></textarea>
 
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" placeholder="Enter your name" required>
-
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" placeholder="Enter your email" required>
-
-        <label for="message">Message</label>
-        <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter your message" required></textarea>
-
-        <input type="submit" value="Submit">
-      </form>
-    </main>
-  </div>
-</body>
+            <button type="submit">Send</button>
+          </form>
+        </section>
+      </main>
+    </div>
+  </body>
 </html>
